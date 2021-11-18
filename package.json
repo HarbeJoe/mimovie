@@ -1,5 +1,5 @@
 {
-  "name": "mimovie",
+  "name": "hbj-mimovie",
   "description": "Wrapper around the `mediainfo' for obtaining information about multimedia files.",
   "version": "2.0.2",
   "author": {
@@ -29,6 +29,7 @@
     "node": ">=0.6.11"
   },
   "dependencies": {
+    "mimovie": "git+https://github.com/HarbeJoe/mimovie.git",
     "split": "1.0.x"
   },
   "readmeFilename": "README.md",
