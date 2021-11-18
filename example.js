@@ -1,13 +1,16 @@
 #!/usr/bin/env node
 
 var 
-	mimovie = require("./"),
+	mimovie = require("./lib/mimovie"),
 	util = require("util");
 
-mimovie("./test/movie.m4v", function(err, res) {
+	console.log('mimovie', mimovie);
+
+mimovie("./test/movie.mp4", function(err, res) {
 	if (err) {
 		console.log(err);
 	}else{
+		console.log("response", res);
 		console.log(util.inspect(res, null, null, true));
 	}
 });
